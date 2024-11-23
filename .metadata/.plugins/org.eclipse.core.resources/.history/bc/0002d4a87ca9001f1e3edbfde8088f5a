@@ -1,0 +1,27 @@
+package i.vk.service;
+
+import org.springframework.stereotype.Service;
+
+import i.vk.bookrepository.BookRepository;
+import i.vk.dto.BookDTO;
+
+@Service
+public class BookService {
+	private BookRepository bookRepo;
+	
+	public BookService(BookRepository bookRepo) {
+		this.setBookRepo(bookRepo);
+	}
+	
+	public void saveBookService(BookDTO book) {
+		
+	}
+
+	public BookRepository getBookRepo() {
+		return bookRepo;
+	}
+
+	public void setBookRepo(BookRepository bookRepo) {
+		this.bookRepo = bookRepo;
+	}
+}

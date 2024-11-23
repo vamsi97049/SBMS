@@ -1,0 +1,5 @@
+package i.vk.dao;
+
+public class BookDAO {
+
+}

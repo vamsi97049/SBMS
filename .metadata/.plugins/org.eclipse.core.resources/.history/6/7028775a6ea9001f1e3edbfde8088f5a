@@ -1,0 +1,5 @@
+package i.vk.dto;
+
+public class BookDTO {
+
+}
