@@ -1,0 +1,5 @@
+package i.vk52.beans;
+
+public interface IBookDao {
+	public void saveBook(int bid,String bname,int bprice);
+}

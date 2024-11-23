@@ -1,0 +1,53 @@
+package i.vk52.beans;
+
+import java.util.List;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class BookDaoImpl implements IBookDao {
+    private JdbcTemplate jdbcTemplate;
+    private BookRowMapper bookRowMapper;
+    // Constructor
+    public BookDaoImpl(JdbcTemplate jdbcTemplate, BookRowMapper bookRowMapper) {
+        this.jdbcTemplate = jdbcTemplate;
+        this.bookRowMapper = bookRowMapper;
+    }
+
+    @Override
+    public void saveBookDetails(int bid, String bname, int bprice) {
+        String query = "INSERT INTO BOOKSTORE (bid, bname, bprice) VALUES (?, ?, ?)";
+        jdbcTemplate.update(query, bid, bname, bprice);
+    }
+
+   @Override
+	public  List<Book> export2Excel() {
+	   String sql = "SELECT * FROM BOOKSTORE";
+       List<Book> books = jdbcTemplate.query(sql, bookRowMapper);
+       return books;  
+	}
+   @Override
+	public List<Book> export2ExcelFile() {
+	   String sql = "SELECT * FROM BOOKSTORE";
+       List<Book> books = jdbcTemplate.query(sql, bookRowMapper);
+       Workbook workbook = new HSSFWorkbook();
+		Sheet sheet1 = workbook.createSheet("books data");
+		Row headerRow = sheet1.createRow(0);
+		headerRow.createCell(0).setCellValue("BID");
+        headerRow.createCell(1).setCellValue("BNAME");
+        headerRow.createCell(2).setCellValue("BPRICE");
+		int rowIndex = 1;
+        for (Book book : books) {
+            Row row = sheet1.createRow(rowIndex++);
+            row.createCell(0).setCellValue(book.getBid());
+            row.createCell(1).setCellValue(book.getBname());
+            row.createCell(2).setCellValue(book.getBprice());
+        }	
+        return books;
+	}
+}

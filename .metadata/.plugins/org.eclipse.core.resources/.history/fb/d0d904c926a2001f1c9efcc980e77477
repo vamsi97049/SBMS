@@ -1,0 +1,13 @@
+package i.vk52.beans;
+
+public class Motor {
+	// default constructor 
+	public Motor() {
+		System.out.println("Motor:: 0-param constructor");
+	}
+	
+	//  init method 
+	public void start() {
+		System.out.println("StartMethod::ExecutionEntry");
+	}
+}

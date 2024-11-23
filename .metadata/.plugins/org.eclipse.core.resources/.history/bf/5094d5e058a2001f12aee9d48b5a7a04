@@ -1,0 +1,13 @@
+package i.vk52.myapps;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ClassPathBeanDefinitionScanner;
+
+import i.vk52.beans.BookService;
+
+public class App {
+	public static void main(String[] args) {
+		ApplicationContext ctxt = new ClassPathBeanDefinitionScanner("Benas.xml");
+		ctxt.getBean(BookService.class);
+	}
+}

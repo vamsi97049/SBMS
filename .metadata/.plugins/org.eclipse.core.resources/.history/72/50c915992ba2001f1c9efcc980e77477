@@ -1,0 +1,9 @@
+package i.vk52.myapps;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App1 {
+	public static void main(String[] args) {
+		ApplicationCotext ctxt = new ClassPathXmlApplicationContext("Beans.xml");
+	}
+}

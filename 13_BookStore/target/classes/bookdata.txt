@@ -1,0 +1,1000 @@
+1,Scrum Master Training,2210
+2,iOS Development,3436
+3,Flask Framework,2162
+4,Linux System Administration,3252
+5,Go Programming,2391
+6,SQL for Data Science,2987
+7,Cybersecurity Essentials,3498
+8,Data Structures in C,2977
+9,Deep Learning with Python,1717
+10,Web Development with JavaScript,2680
+11,Data Analysis with R,3360
+12,React.js Development,1765
+13,Game Development with Unity,1757
+14,R Programming,2513
+15,Machine Learning with Python,1945
+16,R Programming,3414
+17,SQL Database Management,3197
+18,C++ Programming,1935
+19,Linux System Administration,2225
+20,JavaScript Programming,1611
+21,Kubernetes Essentials,1588
+22,Django Framework,2497
+23,React.js Development,1527
+24,Kotlin Programming,3043
+25,Rust Programming,1594
+26,Data Structures in C,3009
+27,DevOps for Beginners,3075
+28,Python Programming,1841
+29,Web Development with JavaScript,2883
+30,Ruby Programming,2965
+31,TypeScript Programming,3060
+32,Java Programming,2402
+33,Web Development with JavaScript,1996
+34,Flask Framework,2261
+35,Linux System Administration,2383
+36,Deep Learning with Python,3114
+37,Big Data Analytics,3415
+38,SQL Database Management,2704
+39,SQL for Data Science,2631
+40,iOS Development,1920
+41,Agile Project Management,1815
+42,Java Programming,2756
+43,C++ Programming,1562
+44,Go Programming,2903
+45,Android Development,3129
+46,Ruby Programming,1951
+47,C Programming,2571
+48,Linux System Administration,3395
+49,JavaScript Programming,3258
+50,Ruby Programming,2336
+51,Ruby Programming,2291
+52,SQL for Data Science,3497
+53,Data Science with Python,2733
+54,Linux System Administration,3439
+55,Game Development with Unity,3153
+56,Kubernetes Essentials,2829
+57,SQL for Data Science,1866
+58,Android Development,2137
+59,Game Development with Unity,1525
+60,IoT with Python,2064
+61,SQL Database Management,2974
+62,Perl Programming,2330
+63,Kubernetes Essentials,2475
+64,Cybersecurity Essentials,2179
+65,JavaScript Programming,3334
+66,SQL for Data Science,2797
+67,React.js Development,2180
+68,Ruby Programming,3302
+69,C Programming,2938
+70,DevOps for Beginners,3229
+71,Cybersecurity Essentials,2398
+72,SQL for Data Science,3284
+73,Game Development with Unity,1825
+74,Linux System Administration,2779
+75,Web Development with JavaScript,2885
+76,SQL for Data Science,3414
+77,SQL Database Management,3181
+78,SQL Database Management,3366
+79,Scrum Master Training,3210
+80,Deep Learning with Python,3388
+81,Cloud Computing with AWS,3058
+82,Rust Programming,3452
+83,Artificial Intelligence Basics,1709
+84,TypeScript Programming,1945
+85,Rust Programming,3064
+86,Data Structures in C,1923
+87,Agile Project Management,1960
+88,Android Development,2493
+89,Big Data Analytics,3354
+90,Cloud Computing with AWS,2496
+91,Big Data Analytics,2992
+92,SQL for Data Science,2548
+93,Agile Project Management,1634
+94,Artificial Intelligence Basics,3358
+95,DevOps for Beginners,3063
+96,Kubernetes Essentials,3174
+97,SQL Database Management,2907
+98,Cybersecurity Essentials,1685
+99,JavaScript Programming,1527
+100,Python Programming,2070
+101,React.js Development,1763
+102,Flask Framework,1838
+103,IoT with Python,2156
+104,Big Data Analytics,3275
+105,Machine Learning with Python,2645
+106,Ruby Programming,2290
+107,C Programming,2538
+108,PHP Programming,1767
+109,Web Development with JavaScript,1509
+110,Deep Learning with Python,3485
+111,JavaScript Programming,2396
+112,Blockchain Development,3389
+113,Big Data Analytics,2086
+114,Android Development,2451
+115,Kotlin Programming,2362
+116,Big Data Analytics,1716
+117,Django Framework,2070
+118,JavaScript Programming,1666
+119,Linux System Administration,1812
+120,Blockchain Development,1652
+121,Data Analysis with R,2378
+122,Docker for Developers,2503
+123,Big Data Analytics,2986
+124,Data Analysis with R,2972
+125,Blockchain Development,3094
+126,Swift Programming,2616
+127,Kubernetes Essentials,3234
+128,Cybersecurity Essentials,2025
+129,TypeScript Programming,2764
+130,Blockchain Development,3377
+131,Data Analysis with R,2838
+132,Cybersecurity Essentials,2999
+133,C++ Programming,3491
+134,Perl Programming,2332
+135,Scrum Master Training,2993
+136,Game Development with Unity,2406
+137,SQL Database Management,2414
+138,Rust Programming,3081
+139,React.js Development,2396
+140,Cybersecurity Essentials,2872
+141,Agile Project Management,2866
+142,Perl Programming,1700
+143,PHP Programming,2531
+144,Go Programming,1705
+145,Game Development with Unity,2699
+146,Python Programming,2711
+147,Docker for Developers,2053
+148,PHP Programming,1946
+149,SQL for Data Science,1921
+150,Machine Learning with Python,3368
+151,Kotlin Programming,1857
+152,Docker for Developers,1711
+153,C Programming,2854
+154,iOS Development,3318
+155,Artificial Intelligence Basics,2895
+156,Data Analysis with R,1796
+157,Cybersecurity Essentials,2223
+158,Java Programming,2518
+159,Agile Project Management,1640
+160,Perl Programming,3011
+161,React.js Development,3420
+162,Linux System Administration,2015
+163,Kotlin Programming,1544
+164,Python Programming,1992
+165,React.js Development,2522
+166,Go Programming,2931
+167,Machine Learning with Python,2377
+168,Android Development,2930
+169,Rust Programming,2120
+170,TypeScript Programming,3239
+171,Data Structures in C,1700
+172,Game Development with Unity,3016
+173,C Programming,3498
+174,Artificial Intelligence Basics,3389
+175,DevOps for Beginners,2885
+176,JavaScript Programming,2802
+177,R Programming,2424
+178,PHP Programming,3236
+179,SQL Database Management,1993
+180,Cybersecurity Essentials,2359
+181,Java Programming,3230
+182,Big Data Analytics,2735
+183,Linux System Administration,1628
+184,Linux System Administration,2734
+185,Data Structures in C,2691
+186,Rust Programming,2062
+187,React.js Development,3143
+188,C Programming,2748
+189,Go Programming,2552
+190,Machine Learning with Python,2992
+191,Rust Programming,2799
+192,TypeScript Programming,1759
+193,Rust Programming,1530
+194,Web Development with JavaScript,2305
+195,Linux System Administration,3491
+196,IoT with Python,3457
+197,Java Programming,2429
+198,Cloud Computing with AWS,2653
+199,R Programming,3440
+200,R Programming,2919
+201,Ruby Programming,3483
+202,iOS Development,2417
+203,Artificial Intelligence Basics,2575
+204,Blockchain Development,1663
+205,Django Framework,2668
+206,SQL for Data Science,3130
+207,Rust Programming,1993
+208,Game Development with Unity,1875
+209,R Programming,2165
+210,Java Programming,2852
+211,C++ Programming,1969
+212,Game Development with Unity,3175
+213,Agile Project Management,1740
+214,React.js Development,2625
+215,C Programming,2169
+216,Scrum Master Training,2162
+217,R Programming,3176
+218,Game Development with Unity,2653
+219,Deep Learning with Python,2131
+220,Kubernetes Essentials,2137
+221,Blockchain Development,2389
+222,C++ Programming,1639
+223,C Programming,1879
+224,Python Programming,3124
+225,Web Development with JavaScript,3129
+226,Kubernetes Essentials,3260
+227,Game Development with Unity,3310
+228,Node.js Development,2842
+229,Rust Programming,1786
+230,React.js Development,3225
+231,Swift Programming,2473
+232,Django Framework,2519
+233,Game Development with Unity,1699
+234,Web Development with JavaScript,3239
+235,Flask Framework,1850
+236,Deep Learning with Python,3198
+237,Docker for Developers,1940
+238,R Programming,2583
+239,Swift Programming,2330
+240,Go Programming,2015
+241,Go Programming,2712
+242,SQL for Data Science,2223
+243,Artificial Intelligence Basics,2034
+244,Agile Project Management,2679
+245,DevOps for Beginners,3149
+246,Artificial Intelligence Basics,3089
+247,DevOps for Beginners,2450
+248,Android Development,1661
+249,Kubernetes Essentials,2501
+250,C Programming,2474
+251,JavaScript Programming,2623
+252,Kotlin Programming,1865
+253,React.js Development,2991
+254,Blockchain Development,2687
+255,Java Programming,1963
+256,Swift Programming,3245
+257,R Programming,2827
+258,JavaScript Programming,2757
+259,Big Data Analytics,1890
+260,C Programming,2765
+261,Ruby Programming,2434
+262,Data Science with Python,3391
+263,Deep Learning with Python,1961
+264,R Programming,2907
+265,Go Programming,3027
+266,Rust Programming,2731
+267,Android Development,3372
+268,Data Analysis with R,2171
+269,Cybersecurity Essentials,2108
+270,Cybersecurity Essentials,1776
+271,Big Data Analytics,2732
+272,Ruby Programming,2215
+273,Android Development,2156
+274,Blockchain Development,3429
+275,Game Development with Unity,3483
+276,C++ Programming,2323
+277,Django Framework,2580
+278,Java Programming,3283
+279,SQL for Data Science,2747
+280,Agile Project Management,3107
+281,Deep Learning with Python,2326
+282,TypeScript Programming,2830
+283,React.js Development,2049
+284,IoT with Python,2318
+285,Agile Project Management,2775
+286,Big Data Analytics,1614
+287,Web Development with JavaScript,2667
+288,Go Programming,1812
+289,Flask Framework,2574
+290,SQL Database Management,1665
+291,React.js Development,2719
+292,Kubernetes Essentials,3457
+293,DevOps for Beginners,2169
+294,Game Development with Unity,1742
+295,Web Development with JavaScript,3290
+296,Deep Learning with Python,1901
+297,Data Structures in C,3030
+298,Android Development,1983
+299,Linux System Administration,2906
+300,C Programming,2232
+301,Perl Programming,3330
+302,Docker for Developers,2594
+303,Flask Framework,3433
+304,Flask Framework,2287
+305,Flask Framework,2382
+306,PHP Programming,3209
+307,Ruby Programming,3236
+308,Docker for Developers,1829
+309,Ruby Programming,1740
+310,Machine Learning with Python,2486
+311,Kotlin Programming,2002
+312,Flask Framework,3359
+313,Agile Project Management,3246
+314,Cloud Computing with AWS,2145
+315,Big Data Analytics,1724
+316,Cloud Computing with AWS,1953
+317,Android Development,1817
+318,Kotlin Programming,2120
+319,Web Development with JavaScript,2092
+320,Python Programming,1730
+321,Python Programming,3079
+322,iOS Development,2068
+323,Ruby Programming,1850
+324,Perl Programming,3243
+325,Big Data Analytics,1868
+326,Artificial Intelligence Basics,2421
+327,iOS Development,3016
+328,Machine Learning with Python,2978
+329,SQL Database Management,1567
+330,TypeScript Programming,2010
+331,IoT with Python,3472
+332,Android Development,3181
+333,Web Development with JavaScript,3079
+334,Data Structures in C,2611
+335,Web Development with JavaScript,1878
+336,Android Development,3019
+337,Ruby Programming,2592
+338,React.js Development,2908
+339,Node.js Development,1764
+340,Blockchain Development,2179
+341,SQL for Data Science,1674
+342,SQL for Data Science,2294
+343,R Programming,1536
+344,Django Framework,2147
+345,Cybersecurity Essentials,2881
+346,TypeScript Programming,2313
+347,Machine Learning with Python,2755
+348,DevOps for Beginners,2621
+349,Flask Framework,1856
+350,Android Development,3085
+351,Data Science with Python,1517
+352,Python Programming,1535
+353,Game Development with Unity,2153
+354,JavaScript Programming,2183
+355,Deep Learning with Python,2660
+356,Perl Programming,2407
+357,Ruby Programming,1604
+358,Scrum Master Training,2670
+359,Blockchain Development,1802
+360,Linux System Administration,2051
+361,C Programming,1631
+362,Node.js Development,2341
+363,Data Science with Python,2275
+364,Linux System Administration,1579
+365,Machine Learning with Python,2446
+366,Deep Learning with Python,1610
+367,Machine Learning with Python,1668
+368,JavaScript Programming,2976
+369,Machine Learning with Python,2128
+370,SQL Database Management,2670
+371,Docker for Developers,1793
+372,Java Programming,2510
+373,Perl Programming,1801
+374,Flask Framework,3249
+375,C Programming,1532
+376,Perl Programming,1977
+377,Django Framework,3190
+378,Go Programming,1981
+379,Cybersecurity Essentials,2271
+380,Swift Programming,1506
+381,Docker for Developers,3057
+382,Data Science with Python,2453
+383,React.js Development,2216
+384,Kubernetes Essentials,2287
+385,JavaScript Programming,2720
+386,React.js Development,1582
+387,SQL for Data Science,2474
+388,Cloud Computing with AWS,3339
+389,Ruby Programming,2379
+390,SQL for Data Science,2161
+391,Node.js Development,1691
+392,Linux System Administration,1696
+393,Node.js Development,2367
+394,Kotlin Programming,2833
+395,Docker for Developers,2300
+396,Game Development with Unity,2172
+397,Node.js Development,2787
+398,Web Development with JavaScript,2275
+399,Ruby Programming,2486
+400,Java Programming,2645
+401,Data Structures in C,1886
+402,C Programming,2677
+403,React.js Development,1592
+404,IoT with Python,2595
+405,DevOps for Beginners,2602
+406,Linux System Administration,2126
+407,Python Programming,2682
+408,Data Structures in C,1911
+409,SQL for Data Science,1947
+410,SQL for Data Science,2547
+411,Artificial Intelligence Basics,2617
+412,Java Programming,2086
+413,Linux System Administration,3325
+414,Android Development,1842
+415,Web Development with JavaScript,2999
+416,Rust Programming,2733
+417,Linux System Administration,2630
+418,Data Analysis with R,2594
+419,Scrum Master Training,3306
+420,JavaScript Programming,2762
+421,Data Structures in C,2323
+422,R Programming,2999
+423,SQL Database Management,1809
+424,PHP Programming,1817
+425,Kubernetes Essentials,2272
+426,Go Programming,2302
+427,iOS Development,2254
+428,SQL for Data Science,2606
+429,PHP Programming,2557
+430,Blockchain Development,2084
+431,Docker for Developers,2844
+432,Rust Programming,1636
+433,Big Data Analytics,3216
+434,SQL Database Management,2526
+435,Go Programming,1612
+436,Swift Programming,2609
+437,C++ Programming,3018
+438,Node.js Development,3323
+439,IoT with Python,2012
+440,Web Development with JavaScript,3133
+441,C Programming,1516
+442,Web Development with JavaScript,3100
+443,Data Science with Python,2194
+444,Agile Project Management,2285
+445,Java Programming,2180
+446,Web Development with JavaScript,2013
+447,Ruby Programming,1805
+448,Web Development with JavaScript,1737
+449,SQL for Data Science,3180
+450,Game Development with Unity,1737
+451,Cloud Computing with AWS,3236
+452,JavaScript Programming,2231
+453,React.js Development,2069
+454,C++ Programming,1688
+455,Rust Programming,2347
+456,Ruby Programming,1807
+457,SQL for Data Science,2988
+458,C Programming,1690
+459,Cybersecurity Essentials,3137
+460,Agile Project Management,2560
+461,Django Framework,2421
+462,Web Development with JavaScript,2269
+463,PHP Programming,3484
+464,Data Analysis with R,2751
+465,Data Structures in C,3078
+466,Data Science with Python,1604
+467,Game Development with Unity,1672
+468,Ruby Programming,3120
+469,Android Development,2423
+470,iOS Development,2915
+471,C Programming,2139
+472,Java Programming,1700
+473,Cybersecurity Essentials,2633
+474,TypeScript Programming,2259
+475,Scrum Master Training,3139
+476,Java Programming,1510
+477,Go Programming,2563
+478,Deep Learning with Python,1996
+479,Linux System Administration,2273
+480,Swift Programming,2475
+481,SQL Database Management,2000
+482,React.js Development,2041
+483,PHP Programming,3318
+484,Game Development with Unity,2827
+485,Kotlin Programming,2273
+486,iOS Development,3040
+487,Kubernetes Essentials,2952
+488,Deep Learning with Python,1564
+489,Docker for Developers,2079
+490,Big Data Analytics,1773
+491,SQL for Data Science,2877
+492,Go Programming,1801
+493,Kotlin Programming,2211
+494,React.js Development,2561
+495,Scrum Master Training,3500
+496,Docker for Developers,2592
+497,Big Data Analytics,1754
+498,SQL for Data Science,3386
+499,Big Data Analytics,2005
+500,Go Programming,2740
+501,Java Programming,1811
+502,Deep Learning with Python,3324
+503,Java Programming,3145
+504,DevOps for Beginners,3017
+505,JavaScript Programming,3382
+506,Flask Framework,2433
+507,Cloud Computing with AWS,1798
+508,C++ Programming,1761
+509,Java Programming,1934
+510,DevOps for Beginners,2860
+511,PHP Programming,1694
+512,Android Development,2382
+513,iOS Development,1841
+514,Docker for Developers,1836
+515,Docker for Developers,3429
+516,Blockchain Development,1798
+517,Cloud Computing with AWS,3458
+518,Machine Learning with Python,2595
+519,C Programming,1795
+520,Android Development,1678
+521,Scrum Master Training,2392
+522,Django Framework,2263
+523,JavaScript Programming,3001
+524,Scrum Master Training,2924
+525,Python Programming,3095
+526,Go Programming,2165
+527,Game Development with Unity,3373
+528,Kotlin Programming,2409
+529,Java Programming,2605
+530,TypeScript Programming,3410
+531,Kotlin Programming,1648
+532,Game Development with Unity,2272
+533,JavaScript Programming,2191
+534,Rust Programming,2014
+535,Big Data Analytics,3074
+536,Android Development,1603
+537,Big Data Analytics,1526
+538,Rust Programming,2303
+539,Rust Programming,1550
+540,Docker for Developers,2351
+541,PHP Programming,1678
+542,Node.js Development,2529
+543,SQL Database Management,2253
+544,Flask Framework,3335
+545,Machine Learning with Python,3077
+546,Swift Programming,2982
+547,Android Development,1968
+548,Deep Learning with Python,2050
+549,Data Analysis with R,2493
+550,JavaScript Programming,1735
+551,Docker for Developers,1516
+552,Swift Programming,3499
+553,Artificial Intelligence Basics,2172
+554,Java Programming,2072
+555,Big Data Analytics,3106
+556,SQL for Data Science,1862
+557,Deep Learning with Python,2688
+558,Artificial Intelligence Basics,2368
+559,iOS Development,1916
+560,IoT with Python,3404
+561,Linux System Administration,3256
+562,Java Programming,1903
+563,Artificial Intelligence Basics,2707
+564,JavaScript Programming,3302
+565,Django Framework,2151
+566,Go Programming,3436
+567,Blockchain Development,2334
+568,JavaScript Programming,3488
+569,DevOps for Beginners,2146
+570,Flask Framework,3015
+571,C++ Programming,2781
+572,Go Programming,3196
+573,Node.js Development,2082
+574,JavaScript Programming,2940
+575,Linux System Administration,2890
+576,PHP Programming,1868
+577,Data Science with Python,1737
+578,SQL for Data Science,2451
+579,Docker for Developers,2181
+580,C++ Programming,2952
+581,Flask Framework,1727
+582,Python Programming,3157
+583,React.js Development,1591
+584,Kotlin Programming,2012
+585,React.js Development,1599
+586,SQL Database Management,3240
+587,Linux System Administration,1872
+588,SQL for Data Science,2318
+589,Swift Programming,3018
+590,PHP Programming,3177
+591,Docker for Developers,2256
+592,TypeScript Programming,1715
+593,Blockchain Development,3431
+594,Machine Learning with Python,3226
+595,Kubernetes Essentials,2179
+596,TypeScript Programming,3383
+597,Python Programming,2435
+598,Game Development with Unity,3382
+599,SQL Database Management,1765
+600,Perl Programming,1975
+601,Blockchain Development,2287
+602,Go Programming,1944
+603,SQL for Data Science,1903
+604,Scrum Master Training,2441
+605,Node.js Development,3045
+606,TypeScript Programming,2711
+607,Java Programming,2917
+608,Game Development with Unity,3415
+609,C Programming,2390
+610,iOS Development,1965
+611,Scrum Master Training,2119
+612,Scrum Master Training,3334
+613,React.js Development,2950
+614,Artificial Intelligence Basics,3071
+615,DevOps for Beginners,3080
+616,Cybersecurity Essentials,2878
+617,Docker for Developers,2006
+618,Kubernetes Essentials,2902
+619,Swift Programming,2973
+620,Scrum Master Training,2925
+621,Swift Programming,2336
+622,Linux System Administration,2778
+623,Rust Programming,2845
+624,Kotlin Programming,1848
+625,Ruby Programming,2912
+626,C Programming,3292
+627,Java Programming,2652
+628,Cloud Computing with AWS,2956
+629,Web Development with JavaScript,3346
+630,Flask Framework,3074
+631,Data Structures in C,1530
+632,Django Framework,2242
+633,Scrum Master Training,2979
+634,Data Science with Python,2788
+635,Game Development with Unity,1918
+636,PHP Programming,2814
+637,Java Programming,2154
+638,Cloud Computing with AWS,2147
+639,DevOps for Beginners,2811
+640,C++ Programming,3157
+641,Python Programming,1670
+642,Ruby Programming,3480
+643,iOS Development,3408
+644,Django Framework,2294
+645,Blockchain Development,2280
+646,Rust Programming,1725
+647,TypeScript Programming,3081
+648,SQL for Data Science,1644
+649,Blockchain Development,1514
+650,SQL for Data Science,2904
+651,Agile Project Management,2709
+652,Deep Learning with Python,1971
+653,SQL Database Management,2304
+654,Blockchain Development,2101
+655,Kubernetes Essentials,3426
+656,SQL Database Management,1865
+657,Node.js Development,3003
+658,Data Analysis with R,2377
+659,Kubernetes Essentials,1968
+660,Cybersecurity Essentials,2965
+661,Kubernetes Essentials,1536
+662,Cloud Computing with AWS,2629
+663,Cybersecurity Essentials,2063
+664,Scrum Master Training,2129
+665,SQL for Data Science,2146
+666,Blockchain Development,2548
+667,React.js Development,2317
+668,Django Framework,3186
+669,Agile Project Management,2002
+670,Rust Programming,3100
+671,Python Programming,2458
+672,Game Development with Unity,2851
+673,Java Programming,3389
+674,Swift Programming,2788
+675,DevOps for Beginners,2149
+676,Docker for Developers,1742
+677,DevOps for Beginners,3331
+678,Django Framework,2475
+679,Cloud Computing with AWS,2028
+680,Docker for Developers,2188
+681,Web Development with JavaScript,3007
+682,Kotlin Programming,3046
+683,Data Analysis with R,3390
+684,Flask Framework,1562
+685,Docker for Developers,2211
+686,Machine Learning with Python,2820
+687,Blockchain Development,2737
+688,Cloud Computing with AWS,2988
+689,Game Development with Unity,3355
+690,SQL Database Management,3137
+691,TypeScript Programming,2466
+692,JavaScript Programming,1982
+693,SQL Database Management,1824
+694,IoT with Python,1775
+695,SQL for Data Science,1709
+696,Blockchain Development,2975
+697,Django Framework,3291
+698,SQL Database Management,3368
+699,IoT with Python,2017
+700,R Programming,1529
+701,Data Structures in C,2015
+702,iOS Development,1665
+703,iOS Development,1685
+704,Docker for Developers,1933
+705,TypeScript Programming,2621
+706,Data Analysis with R,3012
+707,Big Data Analytics,3363
+708,Cybersecurity Essentials,3479
+709,Deep Learning with Python,2479
+710,R Programming,2611
+711,SQL for Data Science,1556
+712,Data Structures in C,2613
+713,JavaScript Programming,1539
+714,Cybersecurity Essentials,1779
+715,Rust Programming,2069
+716,Scrum Master Training,2627
+717,Scrum Master Training,1550
+718,Cybersecurity Essentials,2231
+719,IoT with Python,2942
+720,DevOps for Beginners,2828
+721,JavaScript Programming,2061
+722,Django Framework,3293
+723,Web Development with JavaScript,2644
+724,Machine Learning with Python,2029
+725,IoT with Python,2768
+726,Blockchain Development,2299
+727,Rust Programming,2075
+728,Node.js Development,2261
+729,PHP Programming,1520
+730,R Programming,3029
+731,React.js Development,2589
+732,C++ Programming,2994
+733,Data Science with Python,2677
+734,Rust Programming,2072
+735,Java Programming,3059
+736,Go Programming,1571
+737,Artificial Intelligence Basics,2746
+738,React.js Development,3439
+739,iOS Development,1834
+740,Game Development with Unity,1520
+741,Go Programming,2733
+742,R Programming,3055
+743,Java Programming,3324
+744,Cloud Computing with AWS,2760
+745,Cybersecurity Essentials,3032
+746,Big Data Analytics,1983
+747,SQL Database Management,2142
+748,JavaScript Programming,1690
+749,Go Programming,3029
+750,Node.js Development,2523
+751,Data Structures in C,2466
+752,Blockchain Development,1553
+753,Machine Learning with Python,2482
+754,Java Programming,3272
+755,Big Data Analytics,2118
+756,IoT with Python,2161
+757,Agile Project Management,1522
+758,Flask Framework,2511
+759,Linux System Administration,2224
+760,SQL Database Management,3236
+761,Data Analysis with R,1844
+762,Node.js Development,2665
+763,Agile Project Management,2488
+764,C Programming,2002
+765,Cybersecurity Essentials,1699
+766,Node.js Development,2308
+767,React.js Development,2706
+768,Kotlin Programming,2275
+769,Linux System Administration,2832
+770,TypeScript Programming,3307
+771,React.js Development,1948
+772,SQL Database Management,3405
+773,Linux System Administration,2759
+774,Kotlin Programming,2975
+775,Go Programming,1734
+776,Python Programming,2926
+777,PHP Programming,3145
+778,Rust Programming,2179
+779,Machine Learning with Python,3163
+780,iOS Development,1608
+781,Agile Project Management,2891
+782,DevOps for Beginners,2836
+783,Cybersecurity Essentials,2472
+784,PHP Programming,3145
+785,SQL Database Management,2113
+786,Scrum Master Training,2146
+787,C Programming,3432
+788,SQL for Data Science,1720
+789,DevOps for Beginners,3491
+790,SQL for Data Science,2536
+791,Django Framework,2465
+792,Kotlin Programming,1837
+793,React.js Development,3040
+794,Blockchain Development,2760
+795,Linux System Administration,3401
+796,Perl Programming,3172
+797,TypeScript Programming,2316
+798,Artificial Intelligence Basics,2737
+799,Data Structures in C,1659
+800,Artificial Intelligence Basics,2120
+801,Perl Programming,3343
+802,Python Programming,2988
+803,Docker for Developers,2582
+804,Data Science with Python,3152
+805,Artificial Intelligence Basics,2224
+806,Big Data Analytics,2619
+807,iOS Development,3026
+808,Artificial Intelligence Basics,1698
+809,iOS Development,2786
+810,iOS Development,2723
+811,SQL for Data Science,2038
+812,DevOps for Beginners,2555
+813,Agile Project Management,3063
+814,DevOps for Beginners,2149
+815,SQL Database Management,3128
+816,Kubernetes Essentials,2677
+817,Web Development with JavaScript,2865
+818,R Programming,3415
+819,C Programming,1667
+820,IoT with Python,2160
+821,C++ Programming,3345
+822,Python Programming,2164
+823,Docker for Developers,2012
+824,Rust Programming,3113
+825,Kubernetes Essentials,3261
+826,JavaScript Programming,3182
+827,Java Programming,2999
+828,Cloud Computing with AWS,1921
+829,DevOps for Beginners,1697
+830,Java Programming,2519
+831,Flask Framework,2451
+832,Flask Framework,2923
+833,R Programming,3402
+834,Data Science with Python,1741
+835,Agile Project Management,1714
+836,Data Science with Python,3401
+837,Docker for Developers,2141
+838,Scrum Master Training,1740
+839,SQL Database Management,2658
+840,Swift Programming,1635
+841,Android Development,2805
+842,DevOps for Beginners,1899
+843,Swift Programming,2437
+844,SQL for Data Science,2804
+845,Data Structures in C,2893
+846,Cybersecurity Essentials,2021
+847,Artificial Intelligence Basics,2313
+848,R Programming,3422
+849,Data Structures in C,2715
+850,R Programming,3358
+851,Big Data Analytics,1909
+852,C Programming,3111
+853,Android Development,3158
+854,Game Development with Unity,2149
+855,TypeScript Programming,1937
+856,iOS Development,2735
+857,Kotlin Programming,3015
+858,Web Development with JavaScript,2290
+859,Python Programming,1738
+860,Ruby Programming,2979
+861,Rust Programming,2212
+862,iOS Development,1665
+863,Node.js Development,2702
+864,React.js Development,2116
+865,React.js Development,1540
+866,SQL Database Management,2766
+867,Kubernetes Essentials,2849
+868,Machine Learning with Python,1640
+869,Perl Programming,2765
+870,C Programming,1825
+871,Cybersecurity Essentials,2918
+872,Node.js Development,2761
+873,Scrum Master Training,1678
+874,Kubernetes Essentials,3451
+875,Artificial Intelligence Basics,2030
+876,JavaScript Programming,1989
+877,SQL Database Management,1954
+878,Perl Programming,2246
+879,JavaScript Programming,2834
+880,Artificial Intelligence Basics,2669
+881,Blockchain Development,3341
+882,React.js Development,2800
+883,Kubernetes Essentials,1823
+884,C Programming,2809
+885,SQL for Data Science,1620
+886,Go Programming,2729
+887,Cybersecurity Essentials,2945
+888,iOS Development,3334
+889,TypeScript Programming,2782
+890,Kotlin Programming,3197
+891,Blockchain Development,1592
+892,Data Analysis with R,1975
+893,Big Data Analytics,3276
+894,SQL Database Management,3207
+895,Data Science with Python,2953
+896,Deep Learning with Python,3478
+897,Deep Learning with Python,1583
+898,TypeScript Programming,2450
+899,Docker for Developers,3335
+900,Node.js Development,1921
+901,Swift Programming,3161
+902,Node.js Development,2798
+903,SQL for Data Science,2006
+904,Kotlin Programming,2331
+905,Big Data Analytics,2342
+906,Web Development with JavaScript,2883
+907,SQL for Data Science,2152
+908,PHP Programming,2343
+909,Game Development with Unity,2411
+910,Django Framework,3110
+911,Node.js Development,2149
+912,Perl Programming,1531
+913,Scrum Master Training,2340
+914,JavaScript Programming,2368
+915,Blockchain Development,2481
+916,iOS Development,2544
+917,Blockchain Development,3229
+918,Node.js Development,1905
+919,Cloud Computing with AWS,3445
+920,Docker for Developers,3486
+921,Kubernetes Essentials,3473
+922,Deep Learning with Python,3456
+923,Android Development,2671
+924,Data Analysis with R,2212
+925,Data Analysis with R,1879
+926,Web Development with JavaScript,3434
+927,SQL for Data Science,1816
+928,Cloud Computing with AWS,2193
+929,Scrum Master Training,3207
+930,Data Structures in C,3084
+931,Android Development,2670
+932,Agile Project Management,1839
+933,Java Programming,2404
+934,PHP Programming,2553
+935,Cybersecurity Essentials,2697
+936,Docker for Developers,3459
+937,Data Analysis with R,3225
+938,React.js Development,3026
+939,Ruby Programming,2197
+940,React.js Development,3343
+941,Web Development with JavaScript,2837
+942,SQL Database Management,2756
+943,Scrum Master Training,3036
+944,Cybersecurity Essentials,2283
+945,Docker for Developers,2775
+946,C Programming,2957
+947,Data Science with Python,2202
+948,Game Development with Unity,2044
+949,Scrum Master Training,3184
+950,Data Structures in C,1582
+951,Big Data Analytics,2351
+952,IoT with Python,3100
+953,Data Analysis with R,2095
+954,Node.js Development,1561
+955,iOS Development,3026
+956,JavaScript Programming,2588
+957,PHP Programming,3432
+958,Perl Programming,2678
+959,Machine Learning with Python,2980
+960,Cybersecurity Essentials,3277
+961,Cybersecurity Essentials,3344
+962,Data Science with Python,1587
+963,Rust Programming,3065
+964,SQL Database Management,1685
+965,C Programming,1515
+966,C Programming,2231
+967,Machine Learning with Python,3190
+968,Game Development with Unity,1790
+969,Android Development,1709
+970,Data Analysis with R,3222
+971,Django Framework,1872
+972,Cybersecurity Essentials,2840
+973,Android Development,3036
+974,SQL Database Management,1504
+975,Flask Framework,2840
+976,Flask Framework,3099
+977,Big Data Analytics,2342
+978,Artificial Intelligence Basics,2572
+979,Web Development with JavaScript,2312
+980,TypeScript Programming,2219
+981,Data Analysis with R,1997
+982,Node.js Development,2357
+983,Agile Project Management,1949
+984,Rust Programming,3196
+985,PHP Programming,2134
+986,Java Programming,3469
+987,Linux System Administration,1903
+988,Perl Programming,2312
+989,Node.js Development,2420
+990,Node.js Development,1796
+991,Flask Framework,3123
+992,TypeScript Programming,3363
+993,Blockchain Development,1998
+994,Java Programming,2775
+995,Android Development,2883
+996,Game Development with Unity,1994
+997,Go Programming,3299
+998,Kotlin Programming,2498
+999,SQL for Data Science,2782
+1000,TypeScript Programming,1643

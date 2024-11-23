@@ -1,0 +1,8 @@
+package i.vk52.beans;
+
+public class Book {
+	private int bid;
+	private String bname;
+	private int bprice;
+	
+}

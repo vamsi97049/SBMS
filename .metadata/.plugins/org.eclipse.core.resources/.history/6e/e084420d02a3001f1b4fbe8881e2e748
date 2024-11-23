@@ -1,0 +1,9 @@
+package i.vk52.myapps;
+
+import org.apache.poi.ss.usermodel.Workbook;
+
+public class App2 {
+	public static void main(String[] args) {
+		Workbook workBook = new XSSFWorkbook();
+	}
+}
