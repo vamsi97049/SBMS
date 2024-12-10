@@ -1,5 +1,0 @@
-package i.vk.bookrepository;
-
-public interface BookRepository {
-
-}
