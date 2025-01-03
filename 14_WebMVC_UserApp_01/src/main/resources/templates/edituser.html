@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMS (User Management System)</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>Edit User Form</h1>
+            <div>
+                <p th:text="${res}"></p>
+            </div>
+        </div>
+
+        <div>
+            <form th:action="@{/update}" th:object="${user}" method="post">
+                <div style="margin-bottom: 15px;">
+                    <input th:type="hidden" th:field="*{uid}">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="Name">Name :: </label>
+                    <input th:type="text" th:field="*{name}" placeholder="Enter Name">
+                    <p th:if="${#fields.hasErrors('name')}" th:errorclass="error" th:errors="*{name}"></p>
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="Email">Email :: </label>
+                    <input th:type="email" th:field="*{email}" placeholder="Enter Email">
+                    <p th:if="${#fields.hasErrors('email')}" th:errorclass="error" th:errors="*{email}"></p>
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="Phone">Phone :: </label>
+                    <input th:type="number" th:field="*{phone}" placeholder="Enter Phone Number">
+                    <p th:if="${#fields.hasErrors('phone')}" th:errorclass="error" th:errors="*{phone}"></p>
+                </div>
+
+                <div>
+                    <button type="submit">Update User</button>
+                </div>
+            </form>
+        </div>
+
+        <br>
+
+        <div>
+            <a th:href="@{/showusers}">View Existing Users</a>
+        </div>
+    </div>
+</body>
+
+</html>

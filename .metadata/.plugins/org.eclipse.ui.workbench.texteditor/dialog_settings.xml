@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="hasShownOverlayPopupBefore" value="true"/>
-	<item key="replaceBarOpen" value="true"/>
+	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
-		<item value="sc"/>
-		<item value="tag"/>
-		<item value="tab"/>
-		<item value="16"/>
-		<item value="12"/>
-		<item value="09_ProfilesSpringBoot"/>
-		<item value="user1"/>
-		<item value="upd"/>
-		<item value="update"/>
-		<item value="save"/>
-		<item value="exist"/>
-		<item value="run"/>
+		<item value="&lt;a"/>
+		<item value="a"/>
+		<item value="getquote"/>
+		<item value="email"/>
+		<item value="all-movie"/>
+		<item value="all"/>
+		<item value="MpesStudentServices"/>
+		<item value="CustomID_GeneratorDemo"/>
+		<item value="read"/>
+		<item value="input"/>
+		<item value="otp has"/>
+		<item value="sus"/>
+		<item value="loginValidation"/>
+		<item value="login"/>
+		<item value="Get"/>
 	</list>
 	<list key="replacehistory">
+		<item value="16_MpesStudentServices"/>
+		<item value="15_CustomID_GeneratorDemo"/>
 		<item value="12_DataJpaRepo_H2DB"/>
 		<item value="list[0]"/>
 	</list>
