@@ -1,0 +1,10 @@
+package com.sm.dao;
+
+import com.sm.entities.User;
+
+public class UserDao {
+	public boolean userCreationRequest(User user) {
+		
+		return false;
+	}
+}

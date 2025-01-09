@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Passenger Details</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Adjust label and input widths */
+        .form-control-custom {
+            width: 100%; /* Make the inputs full-width inside their grid column */
+        }
+
+        .form-label-custom {
+            font-weight: bold; /* Bold labels for better readability */
+        }
+
+        /* Center the form and adjust padding */
+        .container {
+            max-width: 800px; /* Limit the max width for the form */
+            margin-top: 50px; /* Space from the top */
+        }
+
+        .form-group {
+            margin-bottom: 20px; /* Space between rows */
+        }
+
+        .row {
+            margin-bottom: 15px; /* Space between the rows */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Passenger Details</h2>
+        <!-- Thymeleaf form with binding to the 'passenger' object -->
+        <form th:action="@{/getticket}" th:object="${passenger}" method="post">
+            <!-- Row 1: Email -->
+            <div class="form-row">
+                <div class="col-md-3">
+                    <label for="passengerEmailId" class="form-label-custom">Email ID:</label>
+                </div>
+                <div class="col-md-9">
+                    <input type="email" id="passengerEmailId" th:field="*{passengerEmailId}" class="form-control form-control-custom" required />
+                </div>
+            </div>
+
+            <!-- Row 2: Full Name -->
+            <div class="form-row">
+                <div class="col-md-3">
+                    <label for="passengerFullName" class="form-label-custom">Full Name:</label>
+                </div>
+                <div class="col-md-9">
+                    <input type="text" id="passengerFullName" th:field="*{passengerFullName}" class="form-control form-control-custom" required />
+                </div>
+            </div>
+
+            <!-- Row 3: Gender -->
+            <div class="form-row">
+                <div class="col-md-3">
+                    <label for="passengerGender" class="form-label-custom">Gender:</label>
+                </div>
+                <div class="col-md-9">
+                    <select id="passengerGender" th:field="*{passengerGender}" class="form-control form-control-custom" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Row 4: Age -->
+            <div class="form-row">
+                <div class="col-md-3">
+                    <label for="passengerAge" class="form-label-custom">Age:</label>
+                </div>
+                <div class="col-md-9">
+                    <input type="number" id="passengerAge" th:field="*{passengerAge}" class="form-control form-control-custom" required min="0" />
+                </div>
+            </div>
+
+            <!-- Row 5: Mobile -->
+            <div class="form-row">
+                <div class="col-md-3">
+                    <label for="passengerMobile" class="form-label-custom">Mobile:</label>
+                </div>
+                <div class="col-md-9">
+                    <input type="tel" id="passengerMobile" th:field="*{passengerMobile}" class="form-control form-control-custom" required pattern="[0-9]{10}" />
+                </div>
+            </div>
+
+            <!-- Row 6: Journey Date -->
+            <div class="form-row">
+                <div class="col-md-3">
+                    <label for="passengerJourneyDate" class="form-label-custom">Journey Date:</label>
+                </div>
+                <div class="col-md-9">
+                    <input type="date" id="passengerJourneyDate" th:field="*{passengerJourneyDate}" class="form-control form-control-custom" required />
+                </div>
+            </div>
+
+            <!-- Row 7: Starting Station -->
+            <div class="form-row">
+                <div class="col-md-3">
+                    <label for="startingStation" class="form-label-custom">Starting Station:</label>
+                </div>
+                <div class="col-md-9">
+                    <input type="text" id="startingStation" th:field="*{startingStation}" class="form-control form-control-custom" required />
+                </div>
+            </div>
+
+            <!-- Row 8: Ending Station -->
+            <div class="form-row">
+                <div class="col-md-3">
+                    <label for="endingStation" class="form-label-custom">Ending Station:</label>
+                </div>
+                <div class="col-md-9">
+                    <input type="text" id="endingStation" th:field="*{endingStation}" class="form-control form-control-custom" required />
+                </div>
+            </div>
+
+            <!-- Row 9: Berth Type -->
+            <div class="form-row">
+                <div class="col-md-3">
+                    <label for="berthType" class="form-label-custom">Berth Type:</label>
+                </div>
+                <div class="col-md-9">
+                    <select id="berthType" th:field="*{berthType}" class="form-control form-control-custom" required>
+                        <option value="Sleeper">Sleeper</option>
+                        <option value="AC">AC</option>
+                        <option value="First Class">First Class</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-row">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary btn-block">Get Ticket</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Include Bootstrap and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

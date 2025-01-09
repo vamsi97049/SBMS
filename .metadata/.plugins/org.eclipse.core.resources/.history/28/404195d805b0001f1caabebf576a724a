@@ -1,0 +1,5 @@
+package i.vk.repo;
+
+public interface PersonRepo {
+
+}

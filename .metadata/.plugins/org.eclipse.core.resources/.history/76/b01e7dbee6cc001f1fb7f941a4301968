@@ -1,0 +1,11 @@
+package i.vk.rest;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WelcomeRC {
+		
+	public String invokeWelcome() {
+		return "Welcome to Vk Virtual Services";
+	}
+}

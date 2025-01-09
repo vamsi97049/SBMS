@@ -1,0 +1,3 @@
+spring.application.name=23WelcomeMS
+
+spring.boot.admin.client.url=http://localhost:1111/

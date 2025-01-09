@@ -1,0 +1,207 @@
+package i.vk.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import i.vk.entity.User;
+import i.vk.serviceimpl.UserServiceImpl;
+import i.vk.util.EmailService;
+import i.vk.util.PasswordGenerator;
+import jakarta.mail.MessagingException;
+import jakarta.validation.Valid;
+
+@Controller
+public class UserController {
+	@Autowired
+	private PasswordGenerator pwdGenerator;
+	@Autowired
+	private EmailService emailService;
+	@Autowired
+	private UserServiceImpl service;
+
+	// Method to open user form
+	@GetMapping("/")
+	public String loadFrom(Model model) {
+		// Logic to load the form page
+		User user = new User();
+		model.addAttribute("user", user);
+		return "index";
+	}
+
+	@PostMapping("/createuser")
+	public String handleSubmit(@Valid @ModelAttribute User user, BindingResult result, Model model) {
+
+		if (result.hasErrors()) {
+			return "index";
+		}
+
+		boolean saveUser = service.saveUser(user);
+
+		if (saveUser) {
+			model.addAttribute("res", "User Record has been saved in the table");
+
+			String body = """
+						<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Email</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    .email-container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .header-text {
+      color: #2D9C4C;
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .footer-text {
+      font-size: 12px;
+      font-style: italic;
+      color: #555;
+      text-align: center;
+    }
+    .social-buttons a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      background-color: #444;
+      border-radius: 4px;
+      margin: 5px;
+    }
+    .social-section {
+      background-color: #2D9C4C;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      border-radius: 8px;
+      margin-top: 25px;
+    }
+    @media (max-width: 575.98px) {
+      .email-container {
+        padding: 15px;
+      }
+      .header-text {
+        font-size: 22px;
+      }
+      .social-buttons a {
+        padding: 6px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="email-container">
+      <h2 class="header-text">Welcome to VK Virtual Services..!</h2>
+      <p class="text-dark">Dear <strong class="text-success">{{user.name}}</strong>,</p>
+      <p class="text-dark">We are excited to inform you that your account has been successfully created. Below are your login credentials:</p>
+      <table class="table table-bordered table-striped table-sm">
+        <tbody>
+          <tr>
+            <th class="bg-light">UserID:</th>
+            <td>{{user.email}}</td>
+          </tr>
+          <tr>
+            <th class="bg-light">Password:</th>
+            <td>{{password}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="text-dark">For any assistance, feel free to reach out to our support team at <strong>support@ourservice.com</strong>.</p>
+      <p class="font-weight-bold text-dark">Thanks and regards,<br><strong>Pathallapalli Vamsi Krishna</strong></p>
+      <p class="footer-text">Note: This is a system-generated email. Please do not reply.</p>
+      <div class="social-section">
+        <p>Stay connected with us on social media:</p>
+        <div class="social-buttons">
+          <a href="#" class="btn btn-dark btn-sm">Facebook</a>
+          <a href="#" class="btn btn-dark btn-sm">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+					""";
+			try {
+				emailService.sendEmail(user.getEmail(), "User Account Created", body);
+			} catch (MessagingException e) {
+				model.addAttribute("res", "Error while sending email: " + e.getMessage());
+				e.printStackTrace();
+			}
+
+		} else {
+			model.addAttribute("res", "User Details are not captured. Please check once.");
+		}
+
+		model.addAttribute("user", new User());
+		return "index";
+	}
+
+	// Method to view existing users
+
+	@GetMapping("/showusers")
+	public String getUsers(Model model) {
+		// Display Users on View Logic
+		List<User> users = service.getAllUsers();
+		model.addAttribute("users", users);
+		return "users";
+	}
+
+	@GetMapping("/edituser/{id}")
+	public String editUser(@PathVariable("id") Integer id, Model model) {
+		// Edit transaction
+		User editUser = service.editUser(id);
+		model.addAttribute("user", editUser);
+		return "edituser";
+	}
+
+	@PostMapping("/update")
+	public String updateUserById(@Valid @ModelAttribute User user, BindingResult result, Model model) {
+		if (result.hasErrors()) {
+			return "edituser";
+		}
+		boolean saveUserStatus = service.saveUser(user);
+		if (saveUserStatus) {
+			model.addAttribute("res", "User Data Updated");
+			return "edituser";
+		}
+		model.addAttribute("res", "User Data not Updated");
+		return "edituser";
+	}
+
+	@GetMapping("/deleteuser/{id}")
+	public String deleteUser(@PathVariable("id") Integer id, Model model) {
+		service.deleteUser(id);
+		model.addAttribute("res", "User Deleted");
+		List<User> users = service.getAllUsers();
+		model.addAttribute("users", users);
+		return "users";
+	}
+
+}

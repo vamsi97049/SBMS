@@ -1,0 +1,5 @@
+package i.vk.exp;
+
+public class CourseNotFoundException extends RuntimeException {
+	
+}

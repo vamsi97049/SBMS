@@ -1,0 +1,5 @@
+package com.sm.entities;
+
+public class User {
+
+}

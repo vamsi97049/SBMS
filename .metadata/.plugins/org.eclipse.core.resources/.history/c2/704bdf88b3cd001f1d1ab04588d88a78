@@ -1,0 +1,15 @@
+package i.vk.rest;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WelcomeRC {
+	
+	private Environment env;
+	
+	@GetMapping("/welcome")
+	public String invokeWelcome() {
+		return "Welcome to Vk Virtual Services";
+	}
+}

@@ -1,0 +1,5 @@
+package i.vk.service;
+
+public class QuoteService {
+
+}

@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: greet
+  
+  config:
+    import: optinal:configserver:http://localhost:9095

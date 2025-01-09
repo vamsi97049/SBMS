@@ -1,0 +1,23 @@
+package com.sm.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.sm.entities.User;
+import com.sm.service.UserService;
+
+import jakarta.validation.Valid;
+
+public class UserController {
+	private UserService service;
+	public UserController(UserService service) {
+		this.service=service;
+	}
+	@PostMapping("/users/createuser")
+	public ResponseEntity<String> CreateUser(@Valid @RequestBody User user,BindingResult result){
+		
+		return null;
+	}
+}

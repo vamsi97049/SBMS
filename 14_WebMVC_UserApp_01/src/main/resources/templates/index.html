@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMS (User Management System)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Times+New+Roman&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .error {
+            color: red;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #0056b3;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        .form-control {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            padding: 12px;
+            margin-bottom: 12px;
+            background-color: #f0f8ff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #80bdff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        .header-bg {
+            background-color: #e9f7ff;
+            padding: 15px 0;
+        }
+
+        .form-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-btn {
+            background-color: #f1f8ff;
+            color: #0056b3;
+        }
+
+        .link-btn:hover {
+            background-color: #cce0ff;
+            color: #004085;
+        }
+
+        .alert-info {
+            background-color: #e3f2fd;
+            border-color: #bbdefb;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        .form-label {
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            font-size: 1rem;
+            padding: 12px 20px;
+            width: 100%;
+        }
+
+        .btn-lg {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <div class="text-center header-bg">
+            <h1>Edit User Form</h1>
+            <p class="text-muted" style="font-size: 1rem;">Please fill in the details to edit the user.</p>
+        </div>
+
+        <div class="alert alert-info" th:text="${res}"></div>
+
+        <div class="form-container">
+            <form th:action="@{/createuser}" th:object="${user}" method="post">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="mb-3">
+                            <label for="Name" class="form-label">Name</label>
+                            <input type="text" th:field="*{name}" class="form-control" placeholder="Enter Name" autofocus="on">
+                            <p th:if="${#fields.hasErrors('name')}" th:errorclass="error" th:errors="*{name}" class="text-danger"></p>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email</label>
+                            <input type="email" th:field="*{email}" class="form-control" placeholder="Enter Email">
+                            <p th:if="${#fields.hasErrors('email')}" th:errorclass="error" th:errors="*{email}" class="text-danger"></p>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Phone" class="form-label">Phone</label>
+                            <input type="number" th:field="*{phone}" class="form-control" placeholder="Enter Phone Number">
+                            <p th:if="${#fields.hasErrors('phone')}" th:errorclass="error" th:errors="*{phone}" class="text-danger"></p>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="text-center mt-4">
+			<a th:href="@{/showusers}" class="btn link-btn bg-warning text-white">Show Users</a>	
+		</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

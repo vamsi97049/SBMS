@@ -1,0 +1,10 @@
+package i.vk.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class QuoteService {
+	public ResponseEntity<Quote> getOneRandomQuote(){
+		
+	}
+}

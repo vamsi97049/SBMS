@@ -1,0 +1,9 @@
+package i.vk.inders;
+
+import lombok.Data;
+
+@Data
+public class ExpPacket {
+	private String expCode;
+	private String expMsg;
+}

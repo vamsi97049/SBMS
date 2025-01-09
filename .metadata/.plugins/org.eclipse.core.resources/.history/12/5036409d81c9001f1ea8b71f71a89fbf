@@ -1,0 +1,11 @@
+package i.vk.iservice;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.ResponseEntity;
+
+import i.vk.binder.Quote;
+
+@Configuration
+public interface IQuoteService {
+	public ResponseEntity<Quote> getQuote();
+}

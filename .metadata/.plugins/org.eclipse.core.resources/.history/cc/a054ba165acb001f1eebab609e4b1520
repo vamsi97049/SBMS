@@ -1,0 +1,12 @@
+package i.vk.exp;
+
+@SuppressWarnings("serial")
+public class CourseNotFoundException extends RuntimeException {
+	public CourseNotFoundException() {
+
+	}
+
+	public CourseNotFoundException(String msg) {
+		super(msg);
+	}
+}

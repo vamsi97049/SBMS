@@ -1,0 +1,9 @@
+package com.sm.entities;
+
+public class User {
+	private String userId;
+	private String firstName;
+	private String lastName;
+	private Long mobile;
+	private String emailId;
+}

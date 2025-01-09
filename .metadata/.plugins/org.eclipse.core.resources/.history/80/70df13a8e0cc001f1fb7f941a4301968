@@ -1,0 +1,4 @@
+spring.application.name=21_ServiceRegistry_Eureka
+
+
+server.port=8761   // Recommended to user 8061 for service registry

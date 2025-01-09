@@ -1,0 +1,20 @@
+package i.vk.rest;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.netflix.discovery.converters.Auto;
+
+import i.vk.feigns.WelcomeApiFeignClient;
+
+@RestController
+public class GreetRestController {
+	@Auto
+	private WelcomeApiFeignClient welcomeApi;
+	
+	@GetMapping("/greet")
+	public String invokeGreet() {
+		String msg = "Hello Vamsi krishna";
+		return msg;
+	}
+}

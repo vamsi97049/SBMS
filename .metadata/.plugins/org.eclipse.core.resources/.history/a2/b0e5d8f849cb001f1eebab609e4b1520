@@ -1,0 +1,12 @@
+package i.vk.restcontroller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetUser {
+	@GetMapping("/greetuser")
+	public String greetUser() {
+		return "Welcome to VK-Virtual Services ( Andhra Pradesh )";
+	}
+}

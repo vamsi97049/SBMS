@@ -1,0 +1,17 @@
+package com.sm.service;
+
+import org.springframework.stereotype.Service;
+
+import com.sm.dao.UserDao;
+import com.sm.entities.User;
+
+@Service
+public class UserService {
+	private UserDao dao;
+	public UserService(UserDao dao) {
+		this.dao=dao;
+	}
+	public int userCreationRequest(User user) {
+		return dao.userCreationRequest(user)
+	}
+}

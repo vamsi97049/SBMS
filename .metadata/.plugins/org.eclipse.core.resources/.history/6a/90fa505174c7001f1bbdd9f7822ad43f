@@ -1,0 +1,7 @@
+package com.sm.idao;
+
+import com.sm.entities.User;
+
+public interface IUserDao {
+	public Integer userCreationRequest(User user)
+}

@@ -1,0 +1,19 @@
+package com.sm.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.sm.entities.User;
+import com.sm.service.UserService;
+
+public class UserController {
+	private UserService service;
+	public UserController(UserService service) {
+		this.service=service;
+	}
+	@PostMapping("/users/createuser")
+	public ResponseEntity<String> CreateUser(@RequestBody User user){
+		return null;
+	}
+}

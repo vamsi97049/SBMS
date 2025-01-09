@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: 24GreetMS
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8082
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

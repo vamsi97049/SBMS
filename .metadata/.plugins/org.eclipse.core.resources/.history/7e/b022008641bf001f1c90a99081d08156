@@ -1,0 +1,128 @@
+package i.vk.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import i.vk.entity.User;
+import i.vk.serviceimpl.UserServiceImpl;
+import i.vk.util.EmailService;
+import i.vk.util.PasswordGenerator;
+import jakarta.mail.MessagingException;
+import jakarta.validation.Valid;
+
+@Controller
+public class UserController {
+	@Autowired
+	private PasswordGenerator pwdGenerator;
+	@Autowired
+	private EmailService emailService;
+	@Autowired
+	private UserServiceImpl service;
+
+	// Method to open user form
+	@GetMapping("/")
+	public String loadFrom(Model model) {
+		// Logic to load the form page
+		User user = new User();
+		model.addAttribute("user", user);
+		return "index";
+	}
+
+	@PostMapping("/createuser")
+	public String handleSubmit(@Valid @ModelAttribute User user, BindingResult result, Model model) {
+
+		if (result.hasErrors()) {
+			return "index";
+		}
+
+		boolean saveUser = service.saveUser(user);
+
+		if (saveUser) {
+			model.addAttribute("res", "User Record has been saved in the table");
+
+			String body = "<html><body style='font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4;'>"
+					+ "<div style='max-width: 600px; margin: 0 auto; padding: 20px; background-color: #ffffff; border-radius: 8px; border: 1px solid #ddd;'>"
+					// Add a logo or header image at the top
+					+ "<div style='text-align: center; padding-bottom: 20px;'>"
+					+ "<img src='https://example.com/logo.png' alt='Logo' style='max-width: 150px;'>" + "</div>"
+					+ "<h2 style='text-align: center; color: #4CAF50;'>Welcome to Our Service!</h2>"
+					+ "<p>Dear <strong>" + user.getName() + "</strong>,</p>"
+					+ "<p>Your account has been created successfully. You can use the following credentials to log in:</p>"
+					+ "<table style='width: 100%; border-collapse: collapse; margin-bottom: 20px;'>"
+					+ "<tr><td style='padding: 8px;'><strong>UserID:</strong></td><td style='padding: 8px;'>"
+					+ user.getEmail() + "</td></tr>"
+					+ "<tr><td style='padding: 8px;'><strong>Password:</strong></td><td style='padding: 8px;'>"
+					+ pwdGenerator.generatePassword(user) + "</td></tr>" + "</table>"
+					+ "<p style='text-align: center; font-size: 14px; color: #777;'>"
+					+ "For any assistance, feel free to reach out to our support team." + "</p>"
+					+ "<p style='margin-top: 20px;'>Thanks and regards,<br><strong>Pathallapalli Vamsi Krishna</strong></p>"
+					+ "<p style='font-style: italic; color: #555; text-align: center;'>Note: This is a system-generated email. Please do not reply.</p>"
+					+ "<div style='background-color: #4CAF50; padding: 10px; text-align: center; color: #fff;'>"
+					+ "<p style='margin: 0;'>Follow us on social media: <a href='#' style='color: #fff;'>Facebook</a> | <a href='#' style='color: #fff;'>Twitter</a></p>"
+					+ "</div>" + "</div>" + "</body></html>";
+
+			try {
+				emailService.sendEmail(user.getEmail(), "User Account Created", body);
+			} catch (MessagingException e) {
+				model.addAttribute("res", "Error while sending email: " + e.getMessage());
+				e.printStackTrace();
+			}
+
+		} else {
+			model.addAttribute("res", "User Details are not captured. Please check once.");
+		}
+
+		model.addAttribute("user", new User());
+		return "index";
+	}
+
+	// Method to view existing users
+
+	@GetMapping("/showusers")
+	public String getUsers(Model model) {
+		// Display Users on View Logic
+		List<User> users = service.getAllUsers();
+		model.addAttribute("users", users);
+		return "users";
+	}
+
+	@GetMapping("/edituser/{id}")
+	public String editUser(@PathVariable("id") Integer id, Model model) {
+		// Edit transaction
+		User editUser = service.editUser(id);
+		model.addAttribute("user", editUser);
+		return "edituser";
+	}
+
+	@PostMapping("/update")
+	public String updateUserById(@Valid @ModelAttribute User user, BindingResult result, Model model) {
+		if (result.hasErrors()) {
+			return "edituser";
+		}
+		boolean saveUserStatus = service.saveUser(user);
+		if (saveUserStatus) {
+			model.addAttribute("res", "User Data Updated");
+			return "edituser";
+		}
+		model.addAttribute("res", "User Data not Updated");
+		return "edituser";
+	}
+
+	@GetMapping("/deleteuser/{id}")
+	public String deleteUser(@PathVariable("id") Integer id, Model model) {
+		service.deleteUser(id);
+		model.addAttribute("res", "User Deleted");
+		List<User> users = service.getAllUsers();
+		model.addAttribute("users", users);
+		return "users";
+	}
+
+}

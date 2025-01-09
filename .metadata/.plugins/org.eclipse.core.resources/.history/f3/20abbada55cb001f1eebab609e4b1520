@@ -1,0 +1,10 @@
+package i.vk.exp;
+
+public class CourseNotFoundException extends RuntimeException {
+	public CourseNotFoundException() {
+		
+	}
+	public ExpPacket courseNotFound() {
+		
+	}
+}

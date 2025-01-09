@@ -1,0 +1,10 @@
+package i.vk.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Passenger {
+	private Integer passengerRowNumber;
+	private String passengerEmail;
+	
+}

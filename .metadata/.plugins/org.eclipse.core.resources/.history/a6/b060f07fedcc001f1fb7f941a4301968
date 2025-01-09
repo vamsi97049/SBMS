@@ -1,0 +1,8 @@
+package i.vk.feigns;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name="WelcomeApi")
+public interface WelcomeApiFeignClient {
+
+}

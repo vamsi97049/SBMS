@@ -1,0 +1,11 @@
+package i.vk.rest;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class MainRestCnt {
+	@Value("${msg}")
+	private String msg;
+	public String greet() {
+		
+	}
+}

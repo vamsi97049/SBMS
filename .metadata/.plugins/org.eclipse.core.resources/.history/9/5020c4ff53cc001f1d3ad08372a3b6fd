@@ -1,0 +1,16 @@
+package i.vk.entity;
+
+import jakarta.annotation.Generated;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Passenger {
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer passengerRowNumber;
+	@Id
+	private String passengerEmail;
+	
+}

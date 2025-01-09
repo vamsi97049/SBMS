@@ -1,0 +1,21 @@
+package i.vk.restcontroller1;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import i.vk.exp.CourseNotFoundException;
+
+public class CourseRestController {
+	@GetMapping("/course")
+	public String courseFinder(@RequestParam("courseId") String course) {
+		if(course.equals("SBMS")) {
+			return "SBMS batch is going to start on 10th Jan 2025 by Mr.Ashok";
+		}
+		else if(course.equals("JRTP")) {
+			return "JRTP batch is going to start on 6th Jan 2025 by Mr.Ashok";
+		}else {
+			
+		}
+		return null;
+	}
+}

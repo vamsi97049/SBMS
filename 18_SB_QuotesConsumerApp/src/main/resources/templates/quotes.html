@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quotes List</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Quotes List</h2>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-light">
+                <tr>
+                    <th>ID</th>
+                    <th>QUOTE</th>
+                    <th>AUTHOR</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="quote : ${quotes}">
+                    <td th:text="${quote.id}"></td>
+                    <td th:text="${quote.quote}"></td>
+                    <td th:text="${quote.author}"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-center mt-4">
+            <a th:href="@{/}" class="btn btn-primary">Go Home</a>
+        </div>
+    </div>
+</body>
+
+</html>

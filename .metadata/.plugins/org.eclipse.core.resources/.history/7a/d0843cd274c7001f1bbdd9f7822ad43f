@@ -1,0 +1,14 @@
+package com.sm.service;
+
+import org.springframework.stereotype.Service;
+
+import com.sm.dao.UserDao;
+
+@Service
+public class UserService {
+	private UserDao dao;
+	public UserService(UserDao dao) {
+		this.dao=dao;
+	}
+	
+}

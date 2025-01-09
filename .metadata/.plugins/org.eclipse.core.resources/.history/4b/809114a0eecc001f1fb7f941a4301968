@@ -1,0 +1,19 @@
+package i.vk.rest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import i.vk.feigns.WelcomeApiFeignClient;
+
+@RestController
+public class GreetRestController {
+	@Autowired
+	private WelcomeApiFeignClient welcomeApi;
+	
+	@GetMapping("/greet")
+	public String invokeGreet() {
+		String msg = "Hello Vamsi krishna"+" "+welcomeApi.invokeWelcome();
+		return msg;
+	}
+}

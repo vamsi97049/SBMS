@@ -1,0 +1,24 @@
+package i.vk.restcontroller1;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import i.vk.exp.CourseNotFoundException;
+import jakarta.websocket.server.PathParam;
+import lombok.SneakyThrows;
+
+public class CourseRestController {
+	@GetMapping("/course/{name}")
+	@SneakyThrows
+	public ResponseEntity<String> courseFinder(@PathParam("name") String course) {
+		if(course.equals("SBMS")) {
+			return ResponseEntity.status(HttpStatus.OK).body("SBMS batch is going to start on 10th Jan 2025 by Mr.Ashok");
+		}
+		else if(course.equals("JRTP")) {
+			return "JRTP batch is going to start on 6th Jan 2025 by Mr.Ashok";
+		}else {
+			throw new CourseNotFoundException("Course Not Found");
+		}
+	}
+}

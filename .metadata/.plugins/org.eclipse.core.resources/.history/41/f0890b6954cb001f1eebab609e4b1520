@@ -1,0 +1,26 @@
+package i.vk.exp;
+
+import java.time.LocalDateTime;
+
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+import i.vk.inders.ExpPacket;
+
+public class ExpHandler {
+	@ExceptionHandler(value = {NullPointerException.class})
+	public String handleUnknownException(Exception e) {
+		
+		ExpPacket exp = new ExpPacket();
+		exp.setExpCode("ERK_NPE:99991");
+		exp.setExpMsg(e.getMessage());
+		exp.setOccuredOn(LocalDateTime.now());
+		return "<h3>"
+			 + "errorCode : "
+			 + "<br>"
+			 + "errorDesc : "+exp.getExpMsg()
+			 + "<br>"
+			 + "occuredOn : "+exp.getOccuredOn()
+			 + "<br>"
+			 + "</h3>";
+	}
+}

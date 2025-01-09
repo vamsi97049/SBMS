@@ -1,0 +1,29 @@
+package i.vk.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import i.vk.binder.Quote;
+import i.vk.serviceimpl.QuoteServiceImpl;
+
+@Controller
+public class QuoteController {
+	@Autowired
+	private QuoteServiceImpl service;
+
+	@GetMapping("/")
+	public String defaultRoute() {
+		return "home";
+	}
+
+	@GetMapping("/getone")
+	public String getOneQuoteRandomly(Model model) {
+	    ResponseEntity<Quote> quote = service.getQuote();
+	    model.addAttribute("quote", quote.getBody());
+	    return "getquote";
+	}
+
+}

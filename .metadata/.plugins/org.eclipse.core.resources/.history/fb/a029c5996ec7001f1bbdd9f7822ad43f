@@ -1,0 +1,12 @@
+spring.application.name=MySourceManager
+
+spring.datasource.url=jdbc:mysql://localhost:3306/sbms52
+spring.datasource.username=root
+spring.datasource.password=vamsi2k1
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
+
+# Banner Disabled
+spring.main.banner-mode=off

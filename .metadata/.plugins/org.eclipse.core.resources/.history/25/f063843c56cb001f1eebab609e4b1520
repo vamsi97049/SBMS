@@ -1,0 +1,14 @@
+package i.vk.exp;
+
+import i.vk.inders.ExpPacket;
+
+public class CourseNotFoundException extends RuntimeException {
+	public CourseNotFoundException() {
+		
+	}
+	public ExpPacket courseNotFound() {
+		ExpPacket exp = new ExpPacket();
+		exp.setExpCode("ERK_CNF:88101");
+		exp.setExpMsg("Course Not Found");
+	}
+}

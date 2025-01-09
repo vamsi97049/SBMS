@@ -1,0 +1,29 @@
+package i.vk.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+public class Movie {
+    @Id
+    private int movieId;
+    private String name;
+    private double price;
+    private String genre;
+    private String director;
+    private String producer;
+    private String language;
+    private String releaseDate;
+    private int durationMinutes;
+    private double rating;
+    private String cast;
+    private String description;
+    private boolean isAvailable;
+    private String format;
+}

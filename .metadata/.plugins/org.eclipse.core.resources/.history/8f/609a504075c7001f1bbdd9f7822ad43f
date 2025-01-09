@@ -1,0 +1,10 @@
+package com.sm.controller;
+
+import com.sm.service.UserService;
+
+public class UserController {
+	private UserService service;
+	public UserController() {
+		// TODO Auto-generated constructor stub
+	}
+}

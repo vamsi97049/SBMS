@@ -1,0 +1,23 @@
+package com.sm.dao;
+
+import com.sm.entities.User;
+import com.sm.repository.UserRepository;
+
+public class UserDao {
+	private UserRepository repo;
+	public UserDao(UserRepository repo) {
+		this.repo = repo;
+	}
+	public Integer userCreationRequest(User user) {
+		try {
+			if(!repo.existsById(user.getUserid())) {
+				repo.save(user);
+				return 0;
+			}else {
+				return 1;
+			}
+		} catch (Exception e) {
+			return 999;
+		}
+	}
+}

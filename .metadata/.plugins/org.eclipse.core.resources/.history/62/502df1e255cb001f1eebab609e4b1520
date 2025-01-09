@@ -1,0 +1,12 @@
+package i.vk.exp;
+
+import i.vk.inders.ExpPacket;
+
+public class CourseNotFoundException extends RuntimeException {
+	public CourseNotFoundException() {
+		
+	}
+	public ExpPacket courseNotFound() {
+		
+	}
+}

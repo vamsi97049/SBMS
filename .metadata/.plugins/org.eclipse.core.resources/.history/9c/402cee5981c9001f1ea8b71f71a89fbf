@@ -1,0 +1,28 @@
+package i.vk.serviceimpl;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import i.vk.binder.Quote;
+import i.vk.iservice.IQuoteService;
+
+@Service
+public class QuoteServiceImpl implements IQuoteService {
+	private static final RestTemplate rt = new RestTemplate();
+
+	@Override
+	public ResponseEntity<Quote> getQuote() {
+	    String url = "http://dummyjson.com/quotes/random";
+	    ResponseEntity<Quote> response = rt.getForEntity(url, Quote.class);
+
+	    if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
+	        return response;
+	    } else {
+	        // Log error or handle the failure case here
+	        System.err.println("Failed to fetch quote: " + response.getStatusCode());
+	        return ResponseEntity.status(response.getStatusCode()).body(null);
+	    }
+	}
+
+}

@@ -1,0 +1,14 @@
+package i.vk.filters;
+
+atewayFilterChain;
+import org.springframework.cloud.gateway.filter.GlobalFilter;
+import org.springframework.stereotype.Componentpublic class MyFilter1 implements GlobalFilter {
+
+	@Override
+	public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
+		System.out.println(" filter() - executed..... ");
+
+		return chain.filter(exchange);
+	}
+
+}

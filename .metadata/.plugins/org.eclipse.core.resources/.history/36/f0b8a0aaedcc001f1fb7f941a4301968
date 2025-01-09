@@ -1,0 +1,16 @@
+package i.vk.rest;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetRestController {
+	
+	private OpenFeignClient oo;
+	
+	@GetMapping("/greet")
+	public String invokeGreet() {
+		String msg = "Hello Vamsi krishna";
+		return msg;
+	}
+}

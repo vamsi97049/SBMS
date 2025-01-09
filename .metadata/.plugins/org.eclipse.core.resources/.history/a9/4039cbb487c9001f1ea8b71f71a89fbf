@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote Details</title>
+    <style>
+        /* Basic styling for the quote details */
+        .quote-container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .quote-container h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .quote-container p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .quote-container .author {
+            font-style: italic;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+	<div>  
+		<h3 th:text="${error}" style="color:red;">
+	</div>
+    <div class="quote-container">
+        <h2>Quote Details</h2>
+        <p>ID: <span th:text="${quote.id}"></span></p>
+        <p>QUOTE: <span th:text="${quote.quote}"></span></p>
+        <p class="author">AUTHOR: <span th:text="${quote.author}"></span></p>
+    </div>
+	<div> 
+		<a th:href="@{/}">Click Home</a>
+	</div>
+</body>
+</html>

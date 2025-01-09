@@ -1,0 +1,23 @@
+package i.vk.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import i.vk.service.QuoteService;
+
+@Controller
+public class QuoteController {
+	@Autowired
+	private QuoteService service;
+	
+	@GetMapping("/")
+	public String defaultRoute() {
+		return "home";
+	}
+	
+	public String singleQuote(Model model) {
+		return null;
+	}	
+	
+}

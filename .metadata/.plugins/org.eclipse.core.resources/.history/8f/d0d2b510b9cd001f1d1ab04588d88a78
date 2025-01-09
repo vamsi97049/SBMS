@@ -1,0 +1,5 @@
+package i.vk.filters;
+
+public interface MyFilter1 {
+
+}

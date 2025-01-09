@@ -1,0 +1,22 @@
+package i.vk.restcontroller1;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import i.vk.exp.CourseNotFoundException;
+import lombok.SneakyThrows;
+
+public class CourseRestController {
+	@GetMapping("/course")
+	@SneakyThrows
+	public String courseFinder(@RequestParam("courseId") String course) {
+		if(course.equals("SBMS")) {
+			return "<h1 style='color:darkgreen'>SBMS batch is going to start on 10th Jan 2025 by Mr.Ashok";
+		}
+		else if(course.equals("JRTP")) {
+			return "<h1 style='color:darkblue'>JRTP batch is going to start on 6th Jan 2025 by Mr.Ashok";
+		}else {
+			throw new CourseNotFoundException("Course Not Found");
+		}
+	}
+}

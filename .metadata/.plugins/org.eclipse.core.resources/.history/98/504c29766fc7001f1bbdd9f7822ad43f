@@ -1,0 +1,19 @@
+package com.sm.entities;
+
+import java.time.LocalDate;
+
+public class User {
+	private String userid;
+	private String firstName;
+	private String lastName;
+	private Long mobile;
+	private String emailId;
+	private String password;
+	private String role;
+	private LocalDate createdOn;
+	private LocalDate lastUpdatedOn;
+	private String createdBy;
+	private int isLocked;
+	private int pinStatus;
+	private 	
+}

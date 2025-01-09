@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;i.vk.entiry&apos; to &apos;i.vk.entity&apos;&#x0D;&#x0A;- Original project: &apos;13_DataJpaRepo_H2DB&apos;&#x0D;&#x0A;- Original element: &apos;13_DataJpaRepo_H2DB/src/main/java/i.vk.entiry&apos;&#x0D;&#x0A;- Renamed element: &apos;13_DataJpaRepo_H2DB/src/main/java/i.vk.entity&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;i.vk.entiry&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;i.vk.entiry" name="i.vk.entity" qualified="false" references="true" stamp="1733803957118" textual="false" version="1.0"/>
+</session>

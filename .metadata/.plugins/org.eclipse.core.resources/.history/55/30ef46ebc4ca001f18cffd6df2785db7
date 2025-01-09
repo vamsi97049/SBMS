@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ticket Information</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .ticket-container {
+            margin-top: 50px;
+        }
+        .ticket-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .ticket-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .ticket-details {
+            margin-bottom: 15px;
+        }
+        .btn-back {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container ticket-container">
+        <div class="ticket-card">
+            <div class="ticket-header">
+                <h2>Ticket Information</h2>
+                <p>Here are your ticket details</p>
+            </div>
+
+            <div class="ticket-details">
+                <h5><strong>PNR:</strong> <span th:text="${ticket.pnr}"></span></h5>
+                <h5><strong>Passenger Name:</strong> <span th:text="${ticket.passengerFullName}"></span></h5>
+                <h5><strong>Email ID:</strong> <span th:text="${ticket.emailId}"></span></h5>
+                <h5><strong>Gender:</strong> <span th:text="${ticket.gender}"></span></h5>
+            </div>
+
+            <div class="ticket-details">
+                <h5><strong>Journey Date:</strong> <span th:text="${#dates.format(ticket.journeyOn, 'yyyy-MM-dd')}"></span></h5>
+                <h5><strong>Boarding Station:</strong> <span th:text="${ticket.departureStation}"></span></h5>
+                <h5><strong>Deboarding Station:</strong> <span th:text="${ticket.deboardStation}"></span></h5>
+            </div>
+
+            <div class="ticket-details">
+                <h5><strong>Berth Type:</strong> <span th:text="${ticket.berthType}"></span></h5>
+            </div>
+
+            <div class="ticket-details">
+                <h4><strong>Train Information:</strong></h4>
+                <p><strong>Train Number:</strong> <span th:text="${ticket.train.trainNumber}"></span></p>
+                <p><strong>Train Name:</strong> <span th:text="${ticket.train.trainName}"></span></p>
+                <p><strong>Coach Number:</strong> <span th:text="${ticket.train.coachNumber}"></span></p>
+                <p><strong>Seat Number:</strong> <span th:text="${ticket.train.seatNumber}"></span></p>
+                <p><strong>Arrival Time:</strong> <span th:text="${#dates.format(ticket.train.arrivalTime, 'HH:mm')}"></span></p>
+                <p><strong>Departure Time:</strong> <span th:text="${#dates.format(ticket.train.departureTime, 'HH:mm')}"></span></p>
+            </div>
+
+            <a th:href="@{/}" class="btn btn-secondary btn-back">Back to Home</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

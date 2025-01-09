@@ -1,0 +1,5 @@
+package com.sm.controller;
+
+public class UserController {
+	private UserService service;
+}

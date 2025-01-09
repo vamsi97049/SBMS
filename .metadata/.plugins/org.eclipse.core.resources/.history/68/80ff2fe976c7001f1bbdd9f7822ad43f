@@ -1,0 +1,35 @@
+package com.sm.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.sm.entities.User;
+import com.sm.service.UserService;
+
+import jakarta.validation.Valid;
+
+public class UserController {
+	private UserService service;
+	public UserController(UserService service) {
+		this.service=service;
+	}
+	@PostMapping("/users/createuser")
+	public ResponseEntity<String> CreateUser(@Valid @RequestBody User user,BindingResult result){
+		if(result.hasErrors()) {
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("MSM_ERROR::90193");
+		}
+		if(user!=null) {
+			int creationStatus = service.userCreationRequestService(user);
+			if(creationStatus==0) {
+				return ResponseEntity.status(HttpStatus.OK).body("UserId has been Created");
+			}
+			if(creationStatus==1) {
+				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Existing User");
+			}
+		}
+		return null;
+	}
+}

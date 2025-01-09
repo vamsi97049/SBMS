@@ -1,0 +1,21 @@
+@Controller
+public class QuoteController {
+    @Autowired
+    private QuoteServiceImpl service;
+
+    @GetMapping("/")
+    public String defaultRoute() {
+        return "home";
+    }
+
+    @GetMapping("/getone")
+    public String getOneQuoteRandomly(Model model) {
+        ResponseEntity<Quote> quote = service.getQuote();
+        if (quote != null && quote.getBody() != null) {
+            model.addAttribute("quote", quote.getBody());
+        } else {
+            model.addAttribute("error", "Failed to fetch a quote.");
+        }
+        return "getquote";
+    }
+}

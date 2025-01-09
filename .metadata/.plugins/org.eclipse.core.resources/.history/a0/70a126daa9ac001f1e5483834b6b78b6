@@ -1,0 +1,18 @@
+package i.vk.emprepo;
+
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+
+import i.vk.dto.EmployeeAshokIT;
+import jakarta.transaction.Transactional;
+
+public interface EmployeeAshotITRepository extends CrudRepository<EmployeeAshokIT, String> {
+	// Implementing custom methods
+	
+	// Save New Entry
+	@Modifying
+	@Transactional
+	@Query(value = "INSERT INTO SBMS52.EMPLOYEEASHOKIT (employeeId, employeeName, employeeEmailId, mobileNumber) VALUES (?,?,?,?)", nativeQuery = true)
+	public void recordSaver(String employeeId, String employeeName, String employeeEmailId, Long mobileNumber);
+}

@@ -1,0 +1,14 @@
+package i.vk.exp;
+
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import i.vk.inders.ExpPacket;
+
+@RestControllerAdvice
+public class ExpHandler {
+	@ExceptionHandler(value = Exception.class)
+	public ExpPacket handleUnknownException(Exception e) {
+		
+	}
+}

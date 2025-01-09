@@ -1,0 +1,4 @@
+spring.application.name=18_SB_QuotesConsumerApp
+
+
+server.port=5001

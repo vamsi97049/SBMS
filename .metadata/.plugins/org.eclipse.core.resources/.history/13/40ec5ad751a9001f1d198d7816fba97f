@@ -1,0 +1,13 @@
+package i.vk.productservice;
+
+import org.springframework.stereotype.Service;
+
+import i.vk.dao.ProductDao;
+
+@Service
+public class ProductService {
+	private ProductDao dao;
+	public void saveProduct() {
+		dao.saveProduct();
+	}
+}

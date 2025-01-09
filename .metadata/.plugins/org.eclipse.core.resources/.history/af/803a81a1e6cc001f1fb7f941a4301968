@@ -1,0 +1,11 @@
+package i.vk.rest;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WelcomeRC {
+		
+	public void invokeWelcome() {
+		
+	}
+}

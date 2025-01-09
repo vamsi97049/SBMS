@@ -1,0 +1,36 @@
+package i.vk.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import i.vk.entity.Passenger;
+import i.vk.entity.Ticket;
+import i.vk.service.PassengerServiceMakeMyTrip;
+
+@Controller
+public class ControllerMakeMyTrip {
+	@Autowired
+	private TicketService service;
+	
+	@GetMapping("/")
+	public String defaultRoute() {
+		return "home";
+	}
+	@GetMapping("/booktikt")
+	public String askPassengerDet(Model model) {
+		Passenger passenger = new Passenger();
+		model.addAttribute("passenger",passenger);
+		return "askpassengerdet";
+	}
+	
+	@PostMapping("/getticket")
+	public String bookTicket(@RequestBody Passenger passenger, Model model) {
+		Ticket ticketForPassenger = service.generateTicketForPassenger(passenger);
+		model.addAttribute("ticket",ticketForPassenger);
+		return "ticketinfo";
+	}
+}

@@ -1,0 +1,16 @@
+package i.vk.service;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import i.vk.binder.Quote;
+
+@Service
+public class QuoteService {
+	public ResponseEntity<Quote> getOneRandomQuote(){
+		RestTemplate restTemplate = new RestTemplate();
+		restTemplate.getForEntity("https://dummyjson.com/quotes/random", Quote.class);
+		return null;
+	}
+}

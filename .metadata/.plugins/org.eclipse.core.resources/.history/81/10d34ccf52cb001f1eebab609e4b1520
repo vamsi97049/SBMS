@@ -1,0 +1,21 @@
+package i.vk.restcontroller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetUser {
+	@GetMapping("/greetuser")
+	public String greetUser() {
+		int res = 19/0;
+		return "Welcome to VK-Virtual Services ( Andhra Pradesh )"+res;
+	}
+	@GetMapping("/home")
+	public String home() {
+		String body ="<h1 style='color:green;'>Main Home Page Content goes here......</h1>"
+				+ "<label>Enter number : </label>"
+				+ "<input id='userNum' type='number' placeholder='Enter a number' required>"
+				+ "<script>var numer = document.GetElementById('userNum')</script>";
+		return body;
+	}
+}

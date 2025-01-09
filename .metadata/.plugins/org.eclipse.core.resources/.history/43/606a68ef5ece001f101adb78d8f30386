@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: 26_Config_Server
+	cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/vamsi97049/Yml-Configuration-Files---Temp

@@ -1,0 +1,5 @@
+package com.sm.repository;
+
+public class UserRepository  {
+
+}
