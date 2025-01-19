@@ -1,7 +1,0 @@
-package i.vk.binder;
-
-public class Quote {
-	private Integer Id;
-	private String quote;
-	private String author;
-}

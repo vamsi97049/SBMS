@@ -1,5 +1,0 @@
-package i.vk.binder;
-
-public class Quote {
-	private Integer Id;
-}
