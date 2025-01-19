@@ -3,6 +3,7 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
+		<item value="lombok"/>
 		<item value="port"/>
 		<item value="train"/>
 		<item value="devto"/>
@@ -17,7 +18,6 @@
 		<item value="we"/>
 		<item value="mail"/>
 		<item value="server"/>
-		<item value="web"/>
 	</list>
 	<list key="replacehistory">
 		<item value="16_MpesStudentServices"/>

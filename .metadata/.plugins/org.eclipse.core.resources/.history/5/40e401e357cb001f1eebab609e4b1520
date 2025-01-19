@@ -1,7 +1,0 @@
-package i.vk.restcontroller1;
-
-public class CourseRestController {
-	public String courseFinder(Integer courseId) {
-		return null;
-	}
-}

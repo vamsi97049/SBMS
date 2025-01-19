@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: 29_WkgWthCntsPropertyFile
+app:
+  alertMsgs:
+    login_error: Login Denied
+    login_success: Login Successful
+    invalid_action: Invalid Action
+    action_processed: Your request has been processed successfully
+    action_failed: Failed to process your record
+server:
+  port: 8085

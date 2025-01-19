@@ -1,9 +1,0 @@
-package i.vk.inders;
-
-import java.time.LocalDate;
-
-public class ExpPacket {
-	private String expCode;
-	private String expMsg;
-	private LocalDate expDate;
-}

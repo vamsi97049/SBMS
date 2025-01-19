@@ -1,6 +1,0 @@
-spring.application.name=23WelcomeMS
-
-spring.boot.admin.client.url=http://localhost:1111/
-
-eureka.client.service-url=http://localhost:8761/eureka/
-
